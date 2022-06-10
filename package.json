@@ -1,26 +1,19 @@
 {
-  "name": "turborepo-poc",
-  "version": "0.0.0",
   "private": true,
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev --no-cache --parallel --continue",
     "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "eslint-config-custom": "latest",
-    "prettier": "latest",
-    "tsup": "^6.1.2",
+    "prettier": "^2.5.1",
     "turbo": "latest"
-  },
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
-  },
-  "packageManager": "npm@8.5.5"
+  }
 }

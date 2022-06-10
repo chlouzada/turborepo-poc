@@ -1,0 +1,65 @@
+[debug] [2022-06-09T23:39:14.272Z] ----------------------------------------------------------------------
+[debug] [2022-06-09T23:39:14.273Z] Command:       /usr/bin/node /home/ch/.local/bin/firebase emulators:start --inspect-functions --only functions
+[debug] [2022-06-09T23:39:14.274Z] CLI Version:   11.0.0
+[debug] [2022-06-09T23:39:14.274Z] Platform:      linux
+[debug] [2022-06-09T23:39:14.274Z] Node Version:  v16.15.0
+[debug] [2022-06-09T23:39:14.274Z] Time:          Thu Jun 09 2022 20:39:14 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-06-09T23:39:14.274Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-09T23:39:14.318Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-09T23:39:14.319Z] > authorizing via signed-in user (chlouzada@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-06-09T23:39:14.336Z] [hub] writing locator at /tmp/hub-solid-groove-351400.json
+[warn] ⚠  functions: You are running the Functions emulator in debug mode (port=9229). This means that functions will execute in sequence rather than in parallel. {"metadata":{"emulator":{"name":"functions"},"message":"You are running the Functions emulator in debug mode (port=9229). This means that functions will execute in sequence rather than in parallel."}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-06-09T23:39:14.350Z] defaultcredentials: writing to file /home/ch/.config/firebase/chlouzada_gmail_com_application_default_credentials.json
+[debug] [2022-06-09T23:39:14.351Z] Setting GAC to /home/ch/.config/firebase/chlouzada_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/ch/.config/firebase/chlouzada_gmail_com_application_default_credentials.json"}}
+[debug] [2022-06-09T23:39:14.353Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/solid-groove-351400/adminSdkConfig [none]
+[debug] [2022-06-09T23:39:14.778Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/solid-groove-351400/adminSdkConfig 200
+[debug] [2022-06-09T23:39:14.778Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/solid-groove-351400/adminSdkConfig {"projectId":"solid-groove-351400","storageBucket":"solid-groove-351400.appspot.com"}
+[warn] ⚠  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2022-06-09T23:39:14.804Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-09T23:39:14.804Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-09T23:39:14.804Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","/home/ch/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"/home/ch/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-06-09T23:39:14.881Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
+[info] i  functions: Watching "/home/ch/repositories/turborepo-poc/apps/gcp/" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/ch/repositories/turborepo-poc/apps/gcp/\" for Cloud Functions..."}}
+[debug] [2022-06-09T23:39:15.072Z] Validating nodejs source
+[debug] [2022-06-09T23:39:16.189Z] > [functions] package.json contents: {
+  "name": "gcp",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "dev": "nodemon --watch src --exec \"npm run build && firebase emulators:start --inspect-functions --only functions\" -e js,ts"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^10.2.0",
+    "firebase-functions": "^3.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "typescript": "^4.6.4"
+  },
+  "private": true
+}
+[debug] [2022-06-09T23:39:16.189Z] Building nodejs source
+[debug] [2022-06-09T23:39:16.189Z] Analyzing nodejs backend spec
+[debug] [2022-06-09T23:39:16.192Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-09T23:39:16.202Z] Error: spawn ./node_modules/.bin/firebase-functions ENOENT
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: An unexpected error has occurred.

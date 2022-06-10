@@ -1,5 +1,5 @@
 {
-  "name": "gcp",
+  "name": "ms",
   "version": "1.0.0",
   "scripts": {
     "build": "tsc",
@@ -17,7 +17,9 @@
   "main": "lib/index.js",
   "dependencies": {
     "firebase-admin": "^10.2.0",
-    "firebase-functions": "^3.21.0"
+    "firebase-functions": "^3.21.0",
+    "client": "*",
+    "product": "*"
   },
   "devDependencies": {
     "nodemon": "^2.0.16",

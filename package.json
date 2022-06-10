@@ -15,12 +15,12 @@
   "devDependencies": {
     "eslint-config-custom": "latest",
     "prettier": "latest",
+    "tsup": "^6.1.2",
     "turbo": "latest"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "dependencies": {},
   "packageManager": "npm@8.5.5"
 }

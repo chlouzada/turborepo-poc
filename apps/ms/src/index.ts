@@ -6,6 +6,6 @@ import {log} from 'logger'
 //
 export const helloWorld = functions.https.onRequest((request, response) => {
   functions.logger.info("Hello logs!", {structuredData: true});
-  log("Hello logs!");
+  log('123')
   response.send("Hello from Firebase!");
 });

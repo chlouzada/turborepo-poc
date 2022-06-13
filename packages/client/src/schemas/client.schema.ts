@@ -1,4 +1,4 @@
-import { model, Schema } from "mongoose";
+import { Schema } from "mongoose";
 
 export interface IClient {
   name: string;
@@ -12,7 +12,3 @@ export const clientSchema = new Schema<IClient>(
   },
   { timestamps: true }
 );
-
-const ClientModel = model('clients', clientSchema);
-
-export { ClientModel };

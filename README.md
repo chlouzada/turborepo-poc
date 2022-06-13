@@ -8,7 +8,7 @@ This includes the following packages and apps:
 
 ### Apps
 
-- `functions`: an [Firebase Functions](https://firebase.google.com/docs/functions)
+- `functions`: an [Firebase Functions](https://firebase.google.com/docs/functions) application
 
 ### Packages
 

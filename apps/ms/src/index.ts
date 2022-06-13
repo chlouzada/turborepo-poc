@@ -2,6 +2,7 @@ import * as functions from "firebase-functions";
 import { log } from "logger";
 
 export * from "client";
+export * from "user";
 
 // // Start writing Firebase Functions
 // // https://firebase.google.com/docs/functions/typescript

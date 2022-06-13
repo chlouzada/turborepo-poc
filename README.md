@@ -6,9 +6,12 @@ This is a POC on a Firebase Functions project using multiple packages to create 
 
 This includes the following packages and apps:
 
-### Apps and Packages
+### Apps
 
 - `functions`: an [Firebase Functions](https://firebase.google.com/docs/functions)
+
+### Packages
+
 - `client`: a client package that exports a Firebase Functions
 - `user`: a user package that exports a Firebase Functions
 - `utils`: utility functions used on other packages

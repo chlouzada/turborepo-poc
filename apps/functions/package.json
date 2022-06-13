@@ -1,5 +1,5 @@
 {
-  "name": "ms",
+  "name": "functions",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
@@ -15,10 +15,10 @@
   },
   "main": "dist/index.js",
   "dependencies": {
-    "client": "*",
     "firebase-admin": "^10.2.0",
     "firebase-functions": "^3.21.0",
     "logger": "*",
+    "client": "*",
     "user": "*"
   },
   "devDependencies": {

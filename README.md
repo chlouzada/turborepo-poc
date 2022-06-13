@@ -1,6 +1,6 @@
 # Turborepo POC
 
-This is a POC on a Firebase Functions project using multiple packages to create a single application
+This is a POC on a Firebase Functions project using multiple packages to create a single Firebase Functions application
 
 ## What's inside?
 
@@ -8,8 +8,9 @@ This includes the following packages and apps:
 
 ### Apps and Packages
 
-- `ms`: an [Firebase Functions](https://firebase.google.com/docs/functions)
-- `clienpt`: a client ackage that exports a Firebase Functions
+- `functions`: an [Firebase Functions](https://firebase.google.com/docs/functions)
+- `client`: a client package that exports a Firebase Functions
+- `user`: a user package that exports a Firebase Functions
 - `utils`: utility functions used on other packages
 - `logger`: isomorphic logger (a small wrapper around console.log)
 - `scripts`: Jest and eslint configurations
